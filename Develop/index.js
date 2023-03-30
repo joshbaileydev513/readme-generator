@@ -20,13 +20,14 @@ const questions = [
     }, 
     { 
         type: 'input',
-        name: 'title',
-        message: "Project Title?"
-    }, 
-    { 
-        type: 'input',
         name: 'usage',
         message: "Project Usage?"
+    }, 
+    { 
+        type: 'list',
+        name: 'license',
+        message: "Please choose a License for your Repo",
+        choices: ['MIT', 'GPL', 'Apache', 'BSD', 'None']
     }, 
     { 
         type: 'input',
@@ -40,10 +41,14 @@ const questions = [
     }, 
     { 
         type: 'input',
-        name: 'questions',
-        message: 'For Questions (GitHub)?',
-        message: 'For Questions (Email)?'
-    }, 
+        name: 'github',
+        message: 'Please enter your GitHub username for Questions'
+    },
+    { 
+        type: 'input',
+        name: 'email',
+        message: 'Please enter your Email for Questions'
+    },
 ];
 
 // TODO: Create a function to write README file
