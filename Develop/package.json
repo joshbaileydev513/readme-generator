@@ -7,7 +7,7 @@
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Joshua Bailey",
   "license": "ISC",
   "dependencies": {
     "inquirer": "8.2.4"
